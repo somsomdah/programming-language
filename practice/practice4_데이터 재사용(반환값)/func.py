@@ -1,5 +1,4 @@
-## 노래의 코러스(하이라이트)를 출력하는 함수
-''' 실습3 '''
+# 노래의 코러스(하이라이트)를 출력하는 함수
 def get_chorus(meet_day):
   return f"우~ 이번 주 {meet_day}\n" +\
     f"우~ {meet_day}에 시간 어때요"
@@ -31,7 +30,6 @@ def get_intro(busy_reasons, meet_day, hard_day):
       deco_idx = (deco_idx + 1) % len(deco)
   return "\n".join(result)
 
-''' 실습4 '''
 # [TODO] print -> return으로 변경하기
 def get_outro(my_gender, your_feelings, meet_day):
     print("나 뭔가에 홀린 것 같아")

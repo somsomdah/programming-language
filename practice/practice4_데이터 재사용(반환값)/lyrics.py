@@ -1,14 +1,15 @@
 from func import *
 
-# [TODO] 전역변수 정의하기: 적절히 수정해 보세요
-meet_day = ""
-hard_day = ""
-taste = ""
-your_gender = "" # 예) "남자", "여자"
-my_gender = "" # 예) "남자", "여자"
-your_feelings = "" # 예) "좋아", "싫어", "모르겠어"
+# [TODO] 전역변수 정의하기: 자유롭게 정해 보세요
+meet_day = "수요일" # 우~ 이번 주 {meet_day}
+hard_day = "목요일" # {hard_day}까지 기다리긴 힘들어
+taste = "새콤해" # 일분 일초가 {taste}해
+your_gender = "여자" # 이 {your_gender} 도대체 뭐야
+my_gender = "여자" # 이 {my_gender} 도대체 뭐야
+your_feelings = "사랑해" # {your_feelings}주지 않고는 못 배기겠어
 
-# [참고] 아래 busy_reasons 딕셔너리는 get_intro 함수의 인자로 사용됩니다.
+# [참고] busy_resons: get_intro 함수의 인자로 사용되는 딕셔너리
+# [TODO] 자유롭게 수정해 보세요
 busy_reasons = {
     "월요일": "바쁘지", # 예) "일이 너무 먾지", "피곤하지", "바쁘지"
     "화요일": "", # 예) "프언 수업듣지", "운동하러 가지", "친구 만나기로 했지"
@@ -19,40 +20,14 @@ busy_reasons = {
     "일요일": "",
 }
 
-# [TODO] 변수에 func.py에서 정의한 함수를 호출하여 값을 할당하기
+# [TODO] 변수에 func.py에서 정의한 함수를 호출하여 반환값 저장하기
 intro_line = get_intro(busy_reasons, meet_day, hard_day)
 print_chorus_line = ""
 mind_control_line = ""
 every_second_line = ""
 outro_line = ""
 
-
-'''INTRO'''
-print(intro_line)
-
-'''1절'''
-print(print_chorus_line)
-
-# [TODO] print문과 전역 변수를 활용하여 수정하기
-# print_mind_control(meet_day) 
-# print_every_second(taste, your_gender) 
-
-'''2절'''
-print(print_chorus_line)
-
-print("딱히 보고 싶은 영화는 없지만")
-print("딱히 먹고 싶은 메뉴는 없지만")
-print()
-
-# [TODO] print문과 전역 변수를 활용하여 수정하기
-# print_mind_control(meet_day) 
-# print_every_second(taste, your_gender) 
-
-'''OUTRO'''
-print(outro_line)
-
-
-# [주의] 아래 코드는 AI 프롬프트로 변환하기 위한 코드입니다. 실습과는 무관하니 수정하지 말아주세요.
+# [주의] AI 프롬프트로 변환하기 위한 코드입니다. 수정 금지!!
 def build_prompt():
     singer1 = "Female" if (my_gender == "여자") else "Male"
     singer2 = "Female" if (your_gender == "여자") else "Male"
