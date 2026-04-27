@@ -30,7 +30,6 @@ print_every_second(taste, your_gender)
 print()
 
 '''2절'''
-
 print_chorus(meet_day) 
 print()
 
